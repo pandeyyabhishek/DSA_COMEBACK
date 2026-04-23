@@ -1,0 +1,184 @@
+
+🧠 What is Hashing (Real Meaning)
+
+Hashing =
+
+Store → Find → Update in O(1) time
+
+Instead of searching linearly:
+
+❌ loop every time
+✅ direct lookup
+
+-------------------------
+🧱 Core Java Hashing Structures
+
+You must master only 3:
+
+✅ 1. HashMap
+
+Most important DS in interviews.
+
+Stores:
+
+key → value
+
+Used for:
+
+frequency counting
+index storing
+mapping relations
+✅ 2. HashSet
+
+Stores only unique elements.
+
+Used for:
+
+duplicate detection
+membership checking
+✅ 3. HashTable / LinkedHashMap / TreeMap
+
+Know conceptually only:
+
+LinkedHashMap → insertion order
+TreeMap → sorted keys
+
+(rarely asked implementation)
+
+--------------------
+
+🚀 Hashing Mastery Roadmap
+PHASE 1 — Fundamentals (Mandatory)
+Learn These Operations
+insert
+search
+delete
+containsKey
+contains
+getOrDefault
+iteration
+
+Goal:
+
+No thinking while using HashMap
+PHASE 2 — Frequency Pattern ⭐⭐⭐⭐⭐
+
+MOST COMMON INTERVIEW PATTERN.
+
+Questions look different but logic same.
+
+Problems:
+
+count characters
+most frequent element
+anagram checking
+majority element
+
+Thinking:
+
+count occurrences
+PHASE 3 — Lookup Pattern
+
+Store something to avoid nested loops.
+
+Instead of:
+
+O(n²)
+
+Convert to:
+
+O(n)
+
+Examples:
+
+Two Sum
+pair difference
+complement search
+
+Thinking:
+
+Have I seen required value before?
+PHASE 4 — Prefix Sum + HashMap ⭐⭐⭐⭐⭐
+
+THIS IS BIG LEVEL-UP.
+
+Used for:
+
+subarray sum = k
+longest subarray
+zero sum subarray
+
+Thinking:
+
+currentSum - k existed earlier?
+
+Top companies LOVE this.
+
+PHASE 5 — Set Based Problems
+
+Use HashSet when:
+
+only existence matters
+duplicates checking
+longest consecutive sequence
+
+Thinking:
+
+presence checking
+PHASE 6 — Hashing + Sliding Window (HIGH ROI)
+
+Very common combination.
+
+Examples:
+
+longest substring without repeat
+at most k distinct characters
+minimum window substring
+PHASE 7 — Advanced Hashing Ideas
+
+You only need conceptual understanding:
+
+Hash collisions
+Load factor
+Rehashing
+Hash function
+
+Interviewers sometimes ask theory.
+
+🔥 Real Interview Patterns (Memorize)
+
+Most problems fall into one of these:
+
+1. Frequency counting
+2. Complement lookup
+3. Prefix sum mapping
+4. Unique element tracking
+5. Window frequency control
+
+If you recognize pattern → solution becomes easy.
+
+⭐ High ROI Problem Order
+
+Practice in this exact sequence:
+
+Contains Duplicate
+Two Sum
+Valid Anagram
+Majority Element
+Intersection of Arrays
+Subarray Sum Equals K ⭐
+Longest Consecutive Sequence ⭐⭐⭐
+Longest Substring Without Repeating ⭐⭐⭐⭐⭐
+🧠 Golden Thinking Rule
+
+Whenever you see:
+
+pair
+frequency
+duplicate
+count
+seen before
+substring
+subarray
+
+👉 THINK HASHMAP FIRST.

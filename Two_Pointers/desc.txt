@@ -1,0 +1,293 @@
+topic : two pointer approach... and ques..
+
+# 🔥 What is Two Pointer Approach?
+
+👉 Instead of using nested loops (**O(n²)**),
+we use **two indices** moving smartly to reduce complexity to **O(n)**.
+
+```
+i → starting pointer
+j → ending pointer
+```
+
+Pointers move based on condition.
+
+---
+
+## 🧠 Core Idea
+
+👉 Use **sorted nature** OR **continuous window**.
+
+You always ask:
+
+> Can I adjust answer by moving only one pointer?
+
+If YES → Two Pointer.
+
+---
+
+# ✅ Types of Two Pointer Patterns (VERY IMPORTANT FOR PBC)
+
+---
+
+# 1️⃣ Opposite Direction Pointers
+
+Most classic pattern.
+
+```
+i = 0
+j = n-1
+```
+
+Move inward.
+
+---
+
+## Pattern Logic
+
+```
+while(i < j){
+   if(condition satisfied) → answer
+   else if(sum too small) i++
+   else j--
+}
+```
+
+---
+
+## 🔥 Questions (Must Do)
+
+### ⭐ Easy → Medium
+
+* Two Sum (sorted array)
+* Pair with given sum
+* Remove duplicates from sorted array
+* Valid Palindrome
+* Reverse Vowels
+
+### ⭐ CORE PBC Questions
+
+* Container With Most Water
+* 3Sum
+* 4Sum
+* Squares of Sorted Array
+* Boats to Save People
+
+👉 **MOST IMPORTANT:**
+`3Sum` = PBC favourite.
+
+---
+
+# 2️⃣ Same Direction (Fast & Slow Pointer)
+
+Also called:
+
+✅ Floyd's algorithm
+✅ Runner technique
+
+```
+slow → moves 1 step
+fast → moves 2 steps
+```
+
+---
+
+## Used When?
+
+* Detect cycle
+* Remove duplicates
+* Partition array
+* Rearrange data
+
+---
+
+## 🔥 Questions
+
+* Linked List Cycle
+* Middle of Linked List
+* Remove Duplicates
+* Move Zeroes
+* Sort Colors (Dutch National Flag)
+
+⚡ VERY HIGH INTERVIEW + PBC frequency.
+
+---
+
+# 3️⃣ Sliding Window (Dynamic Two Pointer)
+
+⭐ MOST IMPORTANT PATTERN FOR PBC
+
+Window expands & shrinks.
+
+```
+left ----- right
+```
+
+---
+
+## When to use?
+
+👉 Subarray
+👉 Continuous segment
+👉 Maximum / Minimum length
+
+---
+
+## Template
+
+```
+while(right < n){
+    include right element
+
+    while(window invalid){
+        remove left element
+        left++
+    }
+
+    update answer
+    right++
+}
+```
+
+---
+
+## 🔥 MUST DO QUESTIONS
+
+### Fixed Window
+
+* Maximum Sum Subarray of Size K
+* First Negative Number in Window
+
+### Variable Window (GOD LEVEL)
+
+* Longest Substring Without Repeating Characters
+* Minimum Window Substring
+* Fruit Into Baskets
+* Longest Repeating Character Replacement
+* Binary Subarray Sum
+* Count Nice Subarrays
+
+👉 **PBC GOLD CATEGORY**
+
+---
+
+# 4️⃣ Merge Type Two Pointer
+
+Used when handling **two sorted arrays**.
+
+---
+
+## Questions
+
+* Merge Sorted Array
+* Intersection of Two Arrays
+* Union of Two Arrays
+* Median of Two Sorted Arrays (advanced)
+
+---
+
+# 5️⃣ Partitioning Two Pointer
+
+Rearranging elements.
+
+```
+smaller left | bigger right
+```
+
+---
+
+## Questions
+
+* Sort Colors
+* Partition Array
+* QuickSort Partition Logic
+* Segregate Even Odd
+* Move Negatives to One Side
+
+---
+
+# 🧠 MASTER DECISION RULE (Important)
+
+Ask yourself:
+
+| Question Feature    | Use                |
+| ------------------- | ------------------ |
+| Sorted array        | Opposite pointers  |
+| Continuous subarray | Sliding window     |
+| Detect cycle        | Fast slow          |
+| Two sorted arrays   | Merge pointers     |
+| Rearrangement       | Partition pointers |
+
+---
+
+# 🚀 PBC High ROI Order (Follow THIS)
+
+### Step 1
+
+✅ Opposite pointer basics
+
+### Step 2
+
+✅ Fast & Slow pointer
+
+### Step 3 ⭐
+
+✅ Sliding Window (MOST IMPORTANT)
+
+### Step 4
+
+✅ 3Sum / KSum problems
+
+### Step 5
+
+✅ Partition + Dutch Flag
+
+---
+
+# 🔥 15 Problems = 80% Two Pointer Mastery
+
+Do these:
+
+1. Two Sum Sorted
+2. Remove Duplicates
+3. Move Zeroes
+4. Valid Palindrome
+5. Container With Most Water
+6. 3Sum ⭐
+7. Sort Colors ⭐
+8. Merge Sorted Array
+9. Linked List Cycle
+10. Middle of Linked List
+11. Longest Substring Without Repeat ⭐
+12. Minimum Window Substring ⭐
+13. Fruit Into Baskets
+14. Trapping Rain Water ⭐⭐
+15. Boats to Save People
+
+---
+
+# ⚡ PBC Reality (Important)
+
+👉 Competitive programmers identify **pattern**, not problem.
+
+Top coders think:
+
+```
+Sorted?
+→ Two pointer
+
+Subarray?
+→ Sliding window
+
+Cycle?
+→ Fast slow
+```
+
+---
+
+Next we can do **real PBC training**:
+
+👉 I’ll teach you **pattern recognition in 5 seconds** (how experts instantly know approach).
+
+Say:
+**"Start two pointer training"** 🚀
